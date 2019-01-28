@@ -7,12 +7,23 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build-android": "npm run build && npx cap sync android && npx cap copy android",
+    "build-ios": "npm run build && npx cap sync && npx cap copy ios",
+    "build-native": "npm run build-android && npm run build-ios"
   },
   "dependencies": {
+    "@capacitor/android": "1.0.0-beta.11",
+    "@capacitor/cli": "1.0.0-beta.11",
+    "@capacitor/core": "1.0.0-beta.11",
+    "@capacitor/ios": "1.0.0-beta.11",
+    "@ionic/core": "4.0.0-rc.3",
+    "@modus/ionic-vue": "^1.2.4",
+    "axios": "0.18.0",
     "register-service-worker": "^1.5.2",
     "vue": "^2.5.21",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
@@ -26,6 +37,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "bodymovin": "^4.13.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",

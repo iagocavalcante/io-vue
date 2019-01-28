@@ -1,0 +1,6 @@
+{
+  "appId": "app.viladosilicio.boilerplate",
+  "appName": "Boileplate",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}
