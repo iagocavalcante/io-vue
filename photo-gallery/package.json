@@ -15,7 +15,7 @@
     "@capacitor/ios": "^2.4.2",
     "@ionic/pwa-elements": "^3.0.1",
     "@ionic/vue": "5.4.0-rc.1",
-    "@ionic/vue-router": "5.4.0-rc.1",
+    "@ionic/vue-router": "5.9.4",
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0",
     "vue-router": "^4.0.0-0"
